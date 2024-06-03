@@ -1,0 +1,303 @@
+body{
+  font: 15px Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#00FFBF;
+  text-align:justify;
+}
+
+/* Estilos globales */
+/*<!--Cambio 6; Crear para el estilo de letra*/
+*{
+font-family: 'Prompt', sans-serif;
+}
+/*<!--Cambio 6*/
+
+.contenedor{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.boton1{
+  /*height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#A9D0F5;*/
+  
+  /*cambio 3 Adicionar; Color de fondo verde, bordes redondeados y opacidad al boton*/
+  background-color:#0f0;
+  border:none;
+  padding: 16px 32px;
+  text-align:center;
+  opacity: 0.5;
+  transition: 0.2s;
+  border-radius: 25px;
+  cursor:pointer;
+  /*cambio 3*/
+}
+/*cambio 3 Crear; Cuando me posicione encima del boton sea totalmente visible (opcacity:1)*/
+.boton1:hover{
+opacity: 1; 
+}
+/*cambio 3*/
+
+.oscuro{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Encabezado **/
+header{
+  background:#24282b;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#1293d4 5px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #marca{
+  float:left;
+}
+
+header #marca h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .resaltado, header .actual a{
+  color:#FF0000;
+  font-weight:bold;
+  /*Cambio 1 Adicioanr*/
+  width:30px;
+  height:20px;
+  background:#000000;
+  border: 2px solid #FFFFFF;
+  border-radius:10px;
+  opacity: 0.5;
+  transition: 0.2s;
+  /*Cambio 1*/
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+   /*Cambio 1 Cambiar el texto por WebSite con bordes y una transicion con opacidiad.*/
+  opacity: 1;
+   /*Cambio 1*/
+}
+ /*Cambio 1 Crear*/
+header .resaltado:hover{
+opacity: 1;
+}
+ /*Cambio 1*/
+
+/*cambio 2 Crear; Adicionar el texto y aplicar una sombra creando una clase de la etiqueta p(p.sombra)*/
+p.sombra{
+	text-shadow:3px 6px 2px black;
+}
+/*cambio 2*/
+
+/* Cabecera con imagen */
+#cabecera{
+  min-height:400px;
+  background:url('../img/cabecera.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#cabecera h2{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#cabecera p{
+  font-size:30px;
+}
+
+/* Formulario */
+#boletin{
+  padding:15px;
+  color:#ffffff;
+  background:#24282b;
+}
+
+#boletin h4{
+  float:left;
+}
+
+#boletin form {
+  float:right;
+  margin-top:15px;
+}
+
+#boletin input[type="email"]{
+  /*padding:4px;
+  height:25px;
+  width:250px;*/
+  /*cambio 4; Cambiar donde ingresas tu Email, fondo negro, texto blanco, con borde blanco y curvo*/
+  width:400px;
+  height:45px;
+  background:#000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  /*cambio 4*/
+}
+
+/* Cajas */
+#cajas{
+  margin-top:20px;
+}
+
+#cajas .caja{
+  float:left;
+  font-size:15px;
+  text-align:justify;
+  width:30%;
+  padding:10px;
+}
+
+#cajas .caja img{
+  width:90px;
+}
+
+/* Lateral */
+aside#lateral{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Servicios */
+ul#servicios li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#1293d4;
+  text-align: center;
+}
+
+
+/* Estilos para el formulario de contacto */
+
+input, textarea{
+  width: 100%;
+  height: 35px;
+  border: 1px solid gray; 
+  margin-bottom: 5px;
+}
+
+textarea{
+  height: 120px;
+}
+/*Seudoclase o selectores de atributos*/
+/*Cambio 7 El boton de Submit de la pagina de contacto utilizar bootstrap la clase (class="btn btn-outline-primary") para el efecto del boton */
+
+/* Borrar este codigo para el el boton de submit de 'contacto'
+input[type='submit']{
+  background-color: #e8491d;
+  color: #fff;  
+}*/
+
+/*Cambio 7*/
+
+/*cambio 6*/
+.formato{
+  border: 3px solid #FFFFFF;
+  border-radius:10px;
+  background-color: rgba(0, 0, 255, .1); /*color azul con 10% de opacidad*/
+  width: 100%;
+  margin-bottom: 35px;
+  height: 30px;
+  border: solid 2px rgba(255,255,255,.5);
+  font-size: 20px;
+  color: #fff;
+  
+  text-align: right;
+  transition: all 1000ms ease;
+
+}
+/*cambio 6*/
+
+/* Media Queries  para que sea responsivo*/
+/*Media Queries; son útiles cuando deseas modificar tu página web o aplicación en función del tipo de dispositivo (como una impresora o una pantalla). Lo más común es que usemos las Media Queries para detectar las dimensiones de la pantalla.*/
+/*En este caso, indicamos que la anchura de la pantalla debe de ser 768 píxeles de máximo para que se apliquen los estilos.*/
+@media(max-width: 768px){
+  header #marca,
+  header nav,
+  header nav li,
+  #boletin h1,
+  #boletin form,
+  #cajas .caja,
+  article#main-col,
+  aside#lateral{  /*<aside id="lateral">*/
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #boletin h1{
+    margin-top:40px;
+  }
+
+  #boletin button{
+    display:block;
+    width:100%;
+  }
+
+  #boletin form input[type="email"]{
+    width:100%;
+    margin-bottom:5px;
+  }
+
+  input, textarea{
+    width: 98%; 
+  }
+}
